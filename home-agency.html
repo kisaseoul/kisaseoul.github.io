@@ -15,14 +15,11 @@
         <link href='https://fonts.googleapis.com/css?family=Raleway:100,200,300,400%7COpen+Sans:400,300' rel='stylesheet' type='text/css'>
         <link href="css/custom.css" rel="stylesheet" type="text/css"> 
         <link href="css/colors/blue.css" id="color-scheme" rel="stylesheet" type="text/css">
-        <script>
-          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');ga('create', 'UA-77054149-1', 'auto');ga('send', 'pageview');
-        </script>
     </head>
     <body> 
         
         <!-- Start Header -->
-        <nav class="navbar navbar-default fullwidth transparent">
+        <nav class="navbar navbar-default fullwidth transparent dark-menu">
             <div class="container">
                 
                 <div class="navbar-header">
@@ -258,7 +255,7 @@
                                             <button class="nav-cart-remove"><i class="ion-close"></i></button>
                                         </span>
                                         <span class="nav-cart-total">
-                                            <span class="bold white">Subtotal:<span class="nav-cart-amount">$139.99</span></span>
+                                            <span class="bold">Subtotal:<span class="nav-cart-amount">$139.99</span></span>
                                             <a href="shop-cart.html" class="btn btn-xs btn-nav-cart">View Cart</a>
                                             <a href="shop-cart.html" class="btn btn-xs btn-primary btn-nav-checkout">Checkout</a>
                                         </span>
@@ -274,335 +271,48 @@
         </nav>
         <!-- End Header -->
         
-        <!-- Hero -->
-        <section class="hero-fullscreen parallax overlay bg-img-1">   
+        <!-- Page Hero -->
+        <section class="hero-fullwidth parallax bg-img-4">  
             <div class="hero-container container">  
                 <div class="hero-content text-center">   
                     
-                    <div class="col-sm-12 mr-auto white text-center pt20">   
-                        <p class="subheading">We Set You Apart To Grow Online</p> 
-                        <h1 class="large">Let us help you build &amp; brand<br>your success online.</h1>     
-                        <p class="mt20 hidden-xs">We create experiences that transform brands, grow businesses and make<br>people’s lives better. We are dedicated to your success!</p>
-                        <a href="#features" class="btn btn-lg btn-primary btn-circle btn-scroll mt40">We're Creative</a>  
+                    <div class="col-sm-12 mr-auto text-center pt20">
+                        <h1 class="large white-until-load mt20">We Are <span class="bold">Digital</span> Agency</h1> 
+                        <h5 class="subheading white-until-load mt20 mb30 hidden-xs">We Set You Apart To Grow Online Quickly</h5>
+                        <hr class="separator">
+                        <a href="#home-portfolio" class="btn btn-lg btn-primary btn-circle btn-scroll mt10">We're Creative</a>  
                     </div> 
-                    <a href="#features" class="scroll-btn"><i class="ion-chevron-down"></i></a>
+                    
+                    <div class="home-filters-dark hidden-xs">
+                        <div class="portfolio-filters-center cbp-l-filters-button" id="js-filters">
+                            <div data-filter="*" class="cbp-filter-item-active cbp-filter-item">
+                                All 
+                            </div>
+                            <div data-filter=".branding" class="cbp-filter-item">
+                                Branding
+                            </div>
+                            <div data-filter=".web-design" class="cbp-filter-item">
+                                Web Design
+                            </div>
+                            <div data-filter=".print" class="cbp-filter-item">
+                                Print
+                            </div>
+                            <div data-filter=".graphic" class="cbp-filter-item hidden-xs">
+                                Graphic
+                            </div>
+                        </div>
+                    </div>
                     
                 </div>
             </div>    
         </section>
-        <!-- End Hero -->       
-             
-        <!-- Features -->  
-        <section id="features" class="pt130 pb110">
-            <div class="container">                      
-                <div class="row">    
-
-                    <div class="col-md-8 section-heading pb0">   
-                        <h2>We Are Wander</h2>
-                        <hr class="separator"> 
-                    </div> 
-
-                    <div class="col-md-10 mr-auto text-center">   
-                        <div class="icon-tabs-centered">
-
-                            <ul id="iconTabs" class="nav nav-tabs nav-tabs-center">
-                                <li class="active"><a href="#tab-i1" data-toggle="tab"><span class="icon-tab ion-ios-flask-outline"></span><span>Experiences</span></a></li>
-                                <li class=""><a href="#tab-i2" data-toggle="tab"><span class="icon-tab ion-ios-bolt-outline"></span><span>Capabilities</span></a></li>
-                                <li class=""><a href="#tab-i3" data-toggle="tab"><span class="icon-tab ion-ios-infinite-outline"></span><span>Our Strategy</span></a></li>
-                                <li class=""><a href="#tab-i4" data-toggle="tab"><span class="icon-tab ion-ios-mic-outline"></span><span>Our Mission</span></a></li>
-                            </ul>
-
-                            <div id="myTabContent" class="tab-content">
-
-                                <div class="tab-pane fade active in" id="tab-i1">   
-                                    <p>Wander helps traditional organizations navigate and find success in the digital world. We evaluate existing customer interactions, performance metrics, data and capabilities to create a strategy for the new experience a company wishes to provide its customers. All customer touchpoints,<br>from digital to in-store to phone, are considered.</p>
-                                </div> 
-                                <div class="tab-pane fade" id="tab-i2"> 
-                                    <p>We partner with clients to determine where and how to compete by rapidly immersing into an industry or problem space and facilitating a series of workshops to identify opportunities, generate and prioritize ideas, and prototype and test product and service concepts.<br>We determine an optimal mix of revenue models.</p> 
-                                </div> 
-                                <div class="tab-pane fade" id="tab-i3"> 
-                                    <p>Sed scelerisque urna id scelerisque tincidunt. Sed scelerisque laoreet dolor sed aliquam. Duis at eros vehicula, sollicitudin magna elementum, pretium diam. Vivamus bibendum fringilla mauris et rhoncus. Phasellus mattis egestas risus ac tempor. Fusce faucibus tincidunt nulla, scelerisque urna id scelerisque tincidunt sagittis magna venenatis quis.</p>
-                                </div> 
-                                <div class="tab-pane fade" id="tab-i4"> 
-                                    <p>Sed scelerisque urna id scelerisque tincidunt. Sed scelerisque laoreet dolor sed aliquam. Duis at eros vehicula, sollicitudin magna elementum, pretium diam. Vivamus bibendum fringilla mauris et rhoncus. Sed scelerisque urna id scelerisque tincidunt. Phasellus mattis egestas risus ac tempor. Nam dapibus sodales ornare.</p>
-                                </div>
-
-                            </div>
-
-                        </div> 
-                    </div> 
-
-                </div>
-            </div>
-        </section>
-        <!-- End Features -->    
-
-        <!-- About -->
-        <section class="bg-grey"> 
-            <div class="container pt40 pb40">   
-                <div class="vertical-align">
-
-                    <div class="col-md-6 text-left pr30 mt40 mb40">   
-                        <h2>About Us</h2>   
-                        <p>Fusce faucibus tincidunt nulla, tincidunt sagittis magna venenatis quis. Proin commodo eu ipsum eu suscipit. In dapibus arcu sit amet imperdiet. Praesent condimentum nulla at mauris ornare. Praesent condimentum nulla at mauris ornare, eget consequat felis euismod. Praesent condimentum nulla at mauris ornare.</p>
-                        <p>Praesent condimentum nulla at mauris ornare, eget consequat felis euismod. Praesent condimentum nulla at mauris ornare. Fusce faucibus tincidunt nulla, tincidunt sagittis magna venenatis quis. Proin commodo eu ipsum eu suscipit.</p> 
-                    </div>
-
-                    <div class="col-md-6  mt50 mb50">  
-                        <div class="video-container">
-                            <iframe src="http://player.vimeo.com/video/115919099?title=0&amp;byline=0&amp;portrait=0&amp;color=fff" allowfullscreen></iframe>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-        <!-- End About -->
-
-        <!-- Team -->
-        <section class="pt130 pb120"> 
-            <div class="container">    
-                <div class="row">      
-
-                    <div class="col-md-12 section-heading">
-                        <h2>Our Team</h2>
-                        <hr class="separator">
-                        <p>We create experiences that transform brands, grow businesses and make clients happy.<br> Working on big challenges in honest collaboration with our clients.</p> 
-                    </div>  
-                    
-                    <div class="team-slider owl-carousel dark-pagination"> 
-                        <div class="team"> 
-                            <div class="team-container">
-                                <div class="team-image">
-                                    <img src="img/team/1.jpg" class="img-responsive" alt="#" />
-                                </div> 
-                                <div class="team-caption">
-                                    <div>
-                                        <div>
-                                            <h4>John Westbrook</h4>
-                                            <p>Senior Web Developer</p>
-                                            <ul> 
-                                                <li class="social-icon"><a href="#"><i class="ion-social-facebook"></i></a></li>
-                                                <li class="social-icon"><a href="#"><i class="ion-social-twitter"></i></a></li>
-                                                <li class="social-icon"><a href="#"><i class="ion-social-youtube"></i></a></li> 
-                                            </ul> 
-                                        </div>
-                                    </div>
-                                </div>  
-                            </div> 
-                        </div>          
-                        <div class="team">
-                            <div class="team-container">
-                                <div class="team-image">
-                                    <img src="img/team/2.jpg" class="img-responsive" alt="#" />
-                                </div> 
-                                <div class="team-caption">
-                                    <div>
-                                        <div>
-                                            <h4>Kelly Swanson</h4>
-                                            <p>Marketing Manager</p>
-                                            <ul> 
-                                                <li class="social-icon"><a href="#"><i class="ion-social-facebook"></i></a></li>
-                                                <li class="social-icon"><a href="#"><i class="ion-social-twitter"></i></a></li>
-                                                <li class="social-icon"><a href="#"><i class="ion-social-youtube"></i></a></li> 
-                                                <li class="social-icon"><a href="#"><i class="ion-social-linkedin"></i></a></li>
-                                            </ul> 
-                                        </div>
-                                    </div>
-                                </div>  
-                            </div>    
-                        </div>  
-                        <div class="team">
-                            <div class="team-container">
-                                <div class="team-image">
-                                    <img src="img/team/3.jpg" class="img-responsive" alt="#" />
-                                </div> 
-                                <div class="team-caption">
-                                    <div>
-                                        <div>
-                                            <h4>Chris Holland</h4>
-                                            <p>Motion Graphics</p>
-                                            <ul> 
-                                                <li class="social-icon"><a href="#"><i class="ion-social-facebook"></i></a></li>
-                                                <li class="social-icon"><a href="#"><i class="ion-social-twitter"></i></a></li>
-                                                <li class="social-icon"><a href="#"><i class="ion-social-youtube"></i></a></li>
-                                                <li class="social-icon"><a href="#"><i class="ion-social-dribbble"></i></a></li>
-                                                <li class="social-icon"><a href="#"><i class="ion-social-linkedin"></i></a></li>
-                                            </ul> 
-                                        </div>
-                                    </div>
-                                </div>  
-                            </div>  
-                        </div> 
-                        <div class="team"> 
-                            <div class="team-container">
-                                <div class="team-image">
-                                    <img src="img/team/4.jpg" class="img-responsive" alt="#" />
-                                </div> 
-                                <div class="team-caption">
-                                    <div>
-                                        <div>
-                                            <h4>Dave Harper</h4>
-                                            <p>Lead Designer</p>
-                                            <ul> 
-                                                <li class="social-icon"><a href="#"><i class="ion-social-facebook"></i></a></li>
-                                                <li class="social-icon"><a href="#"><i class="ion-social-twitter"></i></a></li>
-                                                <li class="social-icon"><a href="#"><i class="ion-social-youtube"></i></a></li> 
-                                            </ul> 
-                                        </div>
-                                    </div>
-                                </div>  
-                            </div> 
-                        </div>          
-                        <div class="team">
-                            <div class="team-container">
-                                <div class="team-image">
-                                    <img src="img/team/5.jpg" class="img-responsive" alt="#" />
-                                </div> 
-                                <div class="team-caption">
-                                    <div>
-                                        <div>
-                                            <h4>Tracey Mathis</h4>
-                                            <p>Graphic Designer</p>
-                                            <ul> 
-                                                <li class="social-icon"><a href="#"><i class="ion-social-facebook"></i></a></li>
-                                                <li class="social-icon"><a href="#"><i class="ion-social-twitter"></i></a></li>
-                                                <li class="social-icon"><a href="#"><i class="ion-social-youtube"></i></a></li> 
-                                                <li class="social-icon"><a href="#"><i class="ion-social-linkedin"></i></a></li>
-                                            </ul> 
-                                        </div>
-                                    </div>
-                                </div>  
-                            </div>    
-                        </div> 
-                        <div class="team">
-                            <div class="team-container">
-                                <div class="team-image">
-                                    <img src="img/team/6.jpg" class="img-responsive" alt="#" />
-                                </div> 
-                                <div class="team-caption">
-                                    <div>
-                                        <div>
-                                            <h4>William Beck</h4>
-                                            <p>Web Developer</p>
-                                            <ul> 
-                                                <li class="social-icon"><a href="#"><i class="ion-social-facebook"></i></a></li>
-                                                <li class="social-icon"><a href="#"><i class="ion-social-twitter"></i></a></li>
-                                                <li class="social-icon"><a href="#"><i class="ion-social-youtube"></i></a></li>
-                                                <li class="social-icon"><a href="#"><i class="ion-social-dribbble"></i></a></li>
-                                                <li class="social-icon"><a href="#"><i class="ion-social-linkedin"></i></a></li>
-                                            </ul> 
-                                        </div>
-                                    </div>
-                                </div>  
-                            </div>  
-                        </div> 
-                        <div class="team">
-                            <div class="team-container">
-                                <div class="team-image">
-                                    <img src="img/team/7.jpg" class="img-responsive" alt="#" />
-                                </div> 
-                                <div class="team-caption">
-                                    <div>
-                                        <div>
-                                            <h4>Steven Griffin</h4>
-                                            <p>Marketing Manager</p>
-                                            <ul> 
-                                                <li class="social-icon"><a href="#"><i class="ion-social-facebook"></i></a></li>
-                                                <li class="social-icon"><a href="#"><i class="ion-social-twitter"></i></a></li>
-                                                <li class="social-icon"><a href="#"><i class="ion-social-youtube"></i></a></li>
-                                                <li class="social-icon"><a href="#"><i class="ion-social-dribbble"></i></a></li>
-                                            </ul> 
-                                        </div>
-                                    </div>
-                                </div>  
-                            </div>  
-                        </div> 
-                    </div>
-                        
-                </div>  
-            </div>
-        </section>
-        <!-- End Team -->  
-
-        <!-- Skills -->
-        <section class="parallax overlay bg-img-3">  
-            <div class="container pt70 pb70">   
-                <div class="row-flex-center">
-
-                    <div class="col-md-5 text-left pr30 mt40 mb40 white">   
-                        <h2>Our Skills</h2>   
-                        <p>Fusce faucibus tincidunt nulla, tincidunt sagittis magna venenatis quis. Proin commodo eu ipsum eu suscipit. In dapibus arcu sit amet imperdiet. Praesent condimentum nulla at mauris ornare.</p>
-                        <p>Praesent condimentum nulla at mauris ornare, eget consequat felis euismod. Praesent condimentum nulla at mauris ornare. Fusce faucibus tincidunt nulla, tincidunt sagittis magna</p> 
-                    </div>
-
-                    <div class="col-md-7 mt60 mb40 white">  
-                        <div class="progress-bars-3">
-                            <p>Branding</p>
-                            <div class="progress white" data-percent="85%">
-                                <div class="progress-bar">
-                                    <span class="progress-bar-tooltip">85%</span>
-                                </div>
-                            </div>
-                            <p>User Experience</p>
-                            <div class="progress white" data-percent="100%">
-                                <div class="progress-bar progress-bar-primary">
-                                    <span class="progress-bar-tooltip">100%</span>
-                                </div>
-                            </div>
-                            <p>Web Design</p>
-                            <div class="progress white" data-percent="70%">
-                                <div class="progress-bar progress-bar-primary">
-                                    <span class="progress-bar-tooltip">70%</span>
-                                </div>
-                            </div>
-                            <p>Fun</p>
-                            <div class="progress white" data-percent="82%">
-                                <div class="progress-bar progress-bar-primary">
-                                    <span class="progress-bar-tooltip">82%</span>
-                                </div>
-                            </div>  
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-        <!-- End Skills -->
-
-        <!-- Fun Facts -->
-        <section id="fun-facts" class="bg-dark">
-            <div class="container-fluid"> 
-                <div class="row">
-
-                    <div class="col-sm-3 counter"> 
-                        <h1>140</h1> 
-                        <h5>Happy Customers</h5> 
-                    </div>
-                    <div class="col-sm-3 counter"> 
-                        <h1>385</h1> 
-                        <h5>Finished Projects</h5> 
-                    </div>
-                    <div class="col-sm-3 counter"> 
-                        <h1>896</h1> 
-                        <h5>Tickets Solved</h5> 
-                    </div> 
-                    <div class="col-sm-3 counter"> 
-                        <h1>25</h1> 
-                        <h5>Winning Awards</h5> 
-                    </div>
-
-                </div> 
-            </div>
-        </section>
-        <!-- End Fun Facts -->  
-
+        <!-- End Page Hero -->        
+            
         <!-- Portfolio -->
-        <section class="p0">
-            <div class="container-fluid">
-                <div class="row">    
-
-                    <div class="portfolio-no-gutter-fullwidth cbp" id="js-grid-no-gutter">
+        <section id="home-portfolio"> 
+            <div class="container-fluid"> 
+                <div class="row home-portfolio-grid">      
+                    <div class="portfolio-grid-fullwidth cbp" id="js-grid">
 
                         <div class="cbp-item print branding">
                             <a href="portfolio-project-carousel.html" class="cbp-caption">
@@ -678,7 +388,38 @@
                                     </div>
                                 </div>
                             </a>
-                        </div> 
+                        </div>
+                        <div class="cbp-item web-design branding">
+                            <a href="portfolio-project-carousel.html" class="cbp-caption">
+                                <div class="cbp-caption-defaultWrap">
+                                    <img src="img/portfolio/grid/6.jpg" alt="#">
+                                </div>
+                                <div class="cbp-caption-activeWrap">
+                                    <div class="cbp-l-caption-alignCenter">
+                                        <div class="cbp-l-caption-body">
+                                            <div class="cbp-l-caption-title">Wander Interface</div>
+                                            <div class="cbp-l-caption-desc">Web Design, Graphic</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="cbp-item web-design graphic">
+                            <a href="portfolio-project-carousel.html" class="cbp-caption">
+                                <div class="cbp-caption-defaultWrap">
+                                    <img src="img/portfolio/grid/7.jpg" alt="#">
+                                </div>
+                                <div class="cbp-caption-activeWrap">
+                                    <div class="cbp-l-caption-alignCenter">
+                                        <div class="cbp-l-caption-body">
+                                            <div class="cbp-l-caption-title">Floating Apps</div>
+                                            <div class="cbp-l-caption-desc">Web Design, Graphic</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
                         <div class="cbp-item print branding">
                             <a href="portfolio-project-carousel.html" class="cbp-caption">
                                 <div class="cbp-caption-defaultWrap">
@@ -693,50 +434,353 @@
                                     </div>
                                 </div>
                             </a>
+                        </div>
+                        <div class="cbp-item web-design graphic">
+                            <a href="portfolio-project-carousel.html" class="cbp-caption">
+                                <div class="cbp-caption-defaultWrap">
+                                    <img src="img/portfolio/grid/9.jpg" alt="#"> 
+                                </div>
+                                <div class="cbp-caption-activeWrap">
+                                    <div class="cbp-l-caption-alignCenter">
+                                        <div class="cbp-l-caption-body">
+                                            <div class="cbp-l-caption-title">WhereTo App</div>
+                                            <div class="cbp-l-caption-desc">Web Design, Graphic</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
                         </div>  
 
-                    </div> 
-
+                    </div>  
                 </div>
             </div>
         </section>            
         <!-- End Portfolio -->   
 
-        <!-- Features -->  
-        <section class="pt110 pb80">
-            <div class="container">                      
+        <!-- Fun Facts -->
+        <section id="fun-facts" class="bg-dark">
+            <div class="container-fluid"> 
                 <div class="row">
 
-                    <div class="col-sm-4 feature-left">
-                        <i class="icon-telescope size-3x color"></i>
-                        <i class="icon-telescope back-icon"></i> 
-                        <div class="feature-left-content">
-                            <h5>Stunning Design</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.</p>
-                        </div> 
+                    <div class="col-sm-3 counter"> 
+                        <h1>5200</h1> 
+                        <h5>Happy Customers</h5> 
                     </div>
-                    <div class="col-sm-4 feature-left">
-                        <i class="icon-circle-compass size-3x color"></i>
-                        <i class="icon-circle-compass back-icon"></i> 
-                        <div class="feature-left-content">
-                            <h5>Retina Optimized</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.</p> 
-                        </div> 
+                    <div class="col-sm-3 counter"> 
+                        <h1>385</h1> 
+                        <h5>Finished Projects</h5> 
                     </div>
-                    <div class="col-sm-4 feature-left">
-                        <i class="icon-genius size-3x color"></i>
-                        <i class="icon-genius back-icon"></i> 
-                        <div class="feature-left-content">
-                            <h5>Fast & Smooth</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.</p> 
+                    <div class="col-sm-3 counter"> 
+                        <h1>896</h1> 
+                        <h5>Tickets Solved</h5> 
+                    </div> 
+                    <div class="col-sm-3 counter"> 
+                        <h1>25</h1> 
+                        <h5>Winning Awards</h5> 
+                    </div>
+
+                </div> 
+            </div>
+        </section>
+        <!-- End Fun Facts -->
+        
+        <!-- Skills -->
+        <section class="pt70 pb70"> 
+            <div class="container">   
+                <div class="row-flex-center">
+
+                    <div class="col-md-5 text-left pr30 mt50 mb40">   
+                        <h3>Always on the cutting edge</h3>      
+                        <p>We believe in the power of surprise to build brands, solve problems and kindly take over the world. We exists to bring powerful, brilliant, creative ideas to life. The kind of ideas that make you smile.</p>
+                        <p>But great ideas are nowhere without the right audience. So when the ideas are ready for the limelight, we deliver them to the right people in the most innovative, most effective way.</p> 
+                    </div>
+
+                    <div class="col-md-7 mt60 mb40">  
+                        <div class="progress-bars-3">
+                            <p>Branding</p>
+                            <div class="progress" data-percent="85%">
+                                <div class="progress-bar">
+                                    <span class="progress-bar-tooltip">85%</span>
+                                </div>
+                            </div>
+                            <p>User Experience</p>
+                            <div class="progress" data-percent="100%">
+                                <div class="progress-bar progress-bar-primary">
+                                    <span class="progress-bar-tooltip">100%</span>
+                                </div>
+                            </div>
+                            <p>Web Design</p>
+                            <div class="progress" data-percent="70%">
+                                <div class="progress-bar progress-bar-primary">
+                                    <span class="progress-bar-tooltip">70%</span>
+                                </div>
+                            </div>
+                            <p>Fun</p>
+                            <div class="progress" data-percent="82%">
+                                <div class="progress-bar progress-bar-primary">
+                                    <span class="progress-bar-tooltip">82%</span>
+                                </div>
+                            </div>  
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- End Skills --> 
+        
+        <!-- Features -->  
+        <section class="parallax overlay bg-img-6">
+            <div class="container pt100 pb100">                      
+                <div class="row">
+                    
+                    <div class="col-md-12 text-center white progress-circle-icon">
+                        
+                        <div class="progress-circle style-1"  data-circle-percent="64" data-circle-text="Modern">
+                            <i class="icon-circle-compass"></i>
+                            <!-- Change circle percent & text in attributes above -->
+                            <svg class="progress-svg"><circle r="80" cx="90" cy="90" fill="transparent" stroke-dasharray="502.4" stroke-dashoffset="0"></circle><circle class="bar" r="80" cx="90" cy="90" fill="transparent" stroke-dasharray="502.4" stroke-dashoffset="0"></circle></svg>
+                        </div>
+                        
+                        <div class="progress-circle style-1"  data-circle-percent="74" data-circle-text="Powerful">
+                            <i class="icon-genius"></i>
+                            <!-- Change circle percent & text in attributes above -->
+                            <svg class="progress-svg"><circle r="80" cx="90" cy="90" fill="transparent" stroke-dasharray="502.4" stroke-dashoffset="0"></circle><circle class="bar" r="80" cx="90" cy="90" fill="transparent" stroke-dasharray="502.4" stroke-dashoffset="0"></circle></svg>
+                        </div>
+                        
+                        <div class="progress-circle style-1"  data-circle-percent="86" data-circle-text="Stunning">
+                            <i class="icon-layers"></i>
+                            <!-- Change circle percent & text in attributes above -->
+                            <svg class="progress-svg"><circle r="80" cx="90" cy="90" fill="transparent" stroke-dasharray="502.4" stroke-dashoffset="0"></circle><circle class="bar" r="80" cx="90" cy="90" fill="transparent" stroke-dasharray="502.4" stroke-dashoffset="0"></circle></svg>
+                        </div>
+                        
+                        <div class="progress-circle style-1"  data-circle-percent="52" data-circle-text="Responsive">
+                            <i class="icon-globe"></i>
+                            <!-- Change circle percent & text in attributes above -->
+                            <svg class="progress-svg"><circle r="80" cx="90" cy="90" fill="transparent" stroke-dasharray="502.4" stroke-dashoffset="0"></circle><circle class="bar" r="80" cx="90" cy="90" fill="transparent" stroke-dasharray="502.4" stroke-dashoffset="0"></circle></svg>
+                        </div>
+                        
+                    </div>
+ 
+
+                </div>
+            </div>
+        </section>
+        <!-- End Features -->   
+        
+        <!-- Team -->
+        <section> 
+            <div class="container-fluid">    
+                <div class="row team-fullwidth">      
+
+                    <div class="col-md-15 col-sm-6 team"> 
+                        <div class="team-container">
+                            <div class="team-image">
+                                <img src="img/team/1.jpg" class="img-responsive" alt="" />
+                            </div> 
+                            <div class="team-caption">
+                                <div>
+                                    <div>
+                                        <h4>John Westbrook</h4>
+                                        <p>Senior Web Developer</p>
+                                        <ul> 
+                                            <li class="social-icon"><a href="#"><i class="ion-social-facebook"></i></a></li>
+                                            <li class="social-icon"><a href="#"><i class="ion-social-twitter"></i></a></li>
+                                            <li class="social-icon"><a href="#"><i class="ion-social-youtube"></i></a></li> 
+                                        </ul> 
+                                    </div>
+                                </div>
+                            </div>  
                         </div> 
+                    </div>            
+
+                    <div class="col-md-15 col-sm-6 team">
+                        <div class="team-container">
+                            <div class="team-image">
+                                <img src="img/team/2.jpg" class="img-responsive" alt="" />
+                            </div> 
+                            <div class="team-caption">
+                                <div>
+                                    <div>
+                                        <h4>Kelly Swanson</h4>
+                                        <p>Marketing Manager</p>
+                                        <ul> 
+                                            <li class="social-icon"><a href="#"><i class="ion-social-facebook"></i></a></li>
+                                            <li class="social-icon"><a href="#"><i class="ion-social-twitter"></i></a></li>
+                                            <li class="social-icon"><a href="#"><i class="ion-social-youtube"></i></a></li> 
+                                            <li class="social-icon"><a href="#"><i class="ion-social-linkedin"></i></a></li>
+                                        </ul> 
+                                    </div>
+                                </div>
+                            </div>  
+                        </div>    
+                    </div> 
+
+                    <div class="col-md-15 col-sm-6 team">
+                        <div class="team-container">
+                            <div class="team-image">
+                                <img src="img/team/3.jpg" class="img-responsive" alt="" />
+                            </div> 
+                            <div class="team-caption">
+                                <div>
+                                    <div>
+                                        <h4>Chris Holland</h4>
+                                        <p>Motion Graphics</p>
+                                        <ul> 
+                                            <li class="social-icon"><a href="#"><i class="ion-social-facebook"></i></a></li>
+                                            <li class="social-icon"><a href="#"><i class="ion-social-twitter"></i></a></li>
+                                            <li class="social-icon"><a href="#"><i class="ion-social-youtube"></i></a></li>
+                                            <li class="social-icon"><a href="#"><i class="ion-social-dribbble"></i></a></li>
+                                            <li class="social-icon"><a href="#"><i class="ion-social-linkedin"></i></a></li>
+                                        </ul> 
+                                    </div>
+                                </div>
+                            </div>  
+                        </div>  
+                    </div>
+
+                    <div class="col-md-15 col-sm-6 team"> 
+                        <div class="team-container">
+                            <div class="team-image">
+                                <img src="img/team/4.jpg" class="img-responsive" alt="" />
+                            </div> 
+                            <div class="team-caption">
+                                <div>
+                                    <div>
+                                        <h4>Linda Whittier</h4>
+                                        <p>Marketing Officer</p>
+                                        <ul> 
+                                            <li class="social-icon"><a href="#"><i class="ion-social-facebook"></i></a></li>
+                                            <li class="social-icon"><a href="#"><i class="ion-social-twitter"></i></a></li>
+                                            <li class="social-icon"><a href="#"><i class="ion-social-youtube"></i></a></li> 
+                                        </ul> 
+                                    </div>
+                                </div>
+                            </div>  
+                        </div> 
+                    </div>            
+
+                    <div class="col-md-15 col-sm-6 team">
+                        <div class="team-container">
+                            <div class="team-image">
+                                <img src="img/team/5.jpg" class="img-responsive" alt="" />
+                            </div> 
+                            <div class="team-caption">
+                                <div>
+                                    <div>
+                                        <h4>Jamie Gossett</h4>
+                                        <p>Sales Officer</p>
+                                        <ul> 
+                                            <li class="social-icon"><a href="#"><i class="ion-social-facebook"></i></a></li>
+                                            <li class="social-icon"><a href="#"><i class="ion-social-twitter"></i></a></li>
+                                            <li class="social-icon"><a href="#"><i class="ion-social-youtube"></i></a></li> 
+                                            <li class="social-icon"><a href="#"><i class="ion-social-linkedin"></i></a></li>
+                                        </ul> 
+                                    </div>
+                                </div>
+                            </div>  
+                        </div>    
+                    </div>     
+
+                </div>  
+            </div>
+        </section>
+        <!-- End Team --> 
+        
+        <!-- Start Price List -->
+        <section class="pt120 pb100">
+            <div class="container">
+                <div class="row"> 
+
+                    <div class="col-md-3 price-table">
+                        <div class="price-box"> 
+                            <h4>Basic</h4>
+                            <h2 class="price-price">  
+                                <span>FREE</span> 
+                            </h2>
+                            <div class="price-features">  
+                                <h5>25,000 Montly Visits</h5>
+                                <p>Limited Email Support</p> 
+                            </div>
+                            <a href="#" class="btn btn-primary btn-md btn-appear"><span>Sign Up Now <i class="ion-android-arrow-forward"></i></span></a>
+                        </div>
+                    </div> 
+
+                    <div class="col-md-3 price-table">
+                        <div class="price-box"> 
+                            <h4>Startup</h4>
+                            <h2 class="price-price"> 
+                                <sup>$</sup>
+                                <span>79<span>/ mo</span></span> 
+                            </h2>
+                            <div class="price-features">  
+                                <h5>50,000 Montly Visits</h5>
+                                <p>Limited Email Support</p> 
+                                <p>24/7 Support</p>
+                                <p>1GB Bandwidth</p> 
+                            </div>
+                            <a href="#" class="btn btn-primary btn-md btn-appear"><span>Sign Up Now <i class="ion-android-arrow-forward"></i></span></a>
+                        </div>
+                    </div> 
+                    
+                    <div class="col-md-3 price-table-featured">
+                        <div class="price-box"> 
+                            <h4>Growth</h4>
+                            <h2 class="price-price"> 
+                                <sup>$</sup>
+                                <span>149<span>/ mo</span></span> 
+                            </h2>
+                            <div class="price-features">  
+                                <h5>75,000 Montly Visits</h5>
+                                <p>Email Support</p> 
+                                <p>24/7 Free Support</p>
+                                <p>5GB Bandwidth</p>
+                                <p>100GB Storage</p> 
+                                <p>Free Upgrades</p>
+                            </div>
+                            <a href="#" class="btn btn-primary btn-md btn-appear"><span>Sign Up Now <i class="ion-android-arrow-forward"></i></span></a>
+                        </div>
+                    </div> 
+                    
+                    <div class="col-md-3 price-table">
+                        <div class="price-box"> 
+                            <h4>Premium</h4>
+                            <h2 class="price-price"> 
+                                <sup>$</sup>
+                                <span>499<span>/ mo</span></span> 
+                            </h2>
+                            <div class="price-features">  
+                                <h5>225,000 Montly Visits</h5>
+                                <p>Phone Support</p> 
+                                <p>24/7 Free Support</p>
+                                <p>900GB Bandwidth</p>
+                                <p>1000TB Storage</p> 
+                            </div>
+                            <a href="#" class="btn btn-primary btn-md btn-appear"><span>Sign Up Now <i class="ion-android-arrow-forward"></i></span></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>        
+        <!-- End Price List -->
+        
+        <!-- Callout -->
+        <section class="pt140 pb120 bg-img-4">
+            <div class="container"> 
+                <div class="row"> 						
+
+                    <div class="col-md-12 text-center">
+                        <h5 class="subheading">WE SET YOU APART TO GROW ONLINE</h5>
+                        <h2>We <span class="bold">Make Brands</span> Shine</h2> 
+                        <a href="http://themeforest.net/user/vossendesign/portfolio" class="btn btn-lg btn-primary btn-circle btn-appear mt40"><span>Purchase Now <i class="ion-checkmark"></i></span></a>
                     </div> 
 
                 </div>
             </div>
         </section>
-        <!-- End Features -->     
-
+        <!-- End Callout --> 
+        
         <!-- Testimonials -->   
         <section class="parallax overlay bg-img-5"> 
             <div class="container">
@@ -773,7 +817,7 @@
             </div>
         </section>
         <!-- End Testimonials -->
-
+        
         <!-- Clients Section -->
         <section class="pt70 pb70">
             <div class="container"> 
@@ -794,8 +838,8 @@
                 </div>
             </div>
         </section>
-        <!-- End Clients -->    
-
+        <!-- End Clients -->  
+        
         <!-- Footer One -->
         <footer id="footer-1">
 
