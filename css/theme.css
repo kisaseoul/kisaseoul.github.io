@@ -1371,8 +1371,8 @@ nav.navbar.nav-grey {
 	}
 	.navbar-default.transparent .navbar-nav>li>a {
 		color: #fff;
-		font-size: 15px;
-		font-weight: 400;
+		font-size: 20px;
+		font-weight: bold;
 		letter-spacing: 1px;
 	}
 	.navbar-default.transparent.nav-small .navbar-nav>li>a {
@@ -1544,6 +1544,7 @@ h3 {
 	letter-spacing: 0px;
 }
 h4 {
+	font-weight: bold;
 	font-size: 20px;
 	letter-spacing: 0px;
 }
