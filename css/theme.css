@@ -1371,13 +1371,13 @@ nav.navbar.nav-grey {
 	}
 	.navbar-default.transparent .navbar-nav>li>a {
 		color: #fff;
-		font-size: 12px;
+		font-size: 15px;
 		font-weight: 400;
 		letter-spacing: 1px;
 	}
 	.navbar-default.transparent.nav-small .navbar-nav>li>a {
 		color: #191a1c;
-		font-size: 12px;
+		font-size: 15px;
 		font-weight: normal;
 		letter-spacing: 1px;
 	}
