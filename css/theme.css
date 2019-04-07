@@ -42,7 +42,7 @@ body {
 }
 body {
 	line-height: 1.4em;
-	font-family: "Open Sans", sans-serif;
+	font-family: 'Apple SD Gothic Neo','Malgun Gothic',arial,sans-serif;
 	color: #292929;
 	opacity: 0;
 	-webkit-font-smoothing: subpixel-antialiased;
@@ -1524,7 +1524,7 @@ nav.navbar.nav-grey {
 
 /*---------- TYPOGRAPHY ----------*/
 h1, h2, h3, h4, h5, h6 {
-	font-family: 'AppleGothic', sans-serif;
+	font-family: 'Apple SD Gothic Neo','Malgun Gothic',arial,sans-serif;
 	font-weight: 300;
 	line-height: 1.1;
 	color: #191a1c;
@@ -1574,7 +1574,6 @@ h6 small {
 	line-height: 1;
 }
 p {
-	font-family: 'Open Sans', sans-serif;
 	font-size: 18px;
 	line-height: 1.75;
 	font-weight: 300;
@@ -1867,7 +1866,7 @@ a:hover .subheading {
 
 /*---------- BUTTONS ----------*/
 .btn {
-	font-family: 'lovelo', sans-serif;
+	font-family: 'Apple SD Gothic Neo','Malgun Gothic',arial,sans-serif;
 	font-size: 11px;
 	font-weight: normal;
 	text-transform: uppercase;
@@ -4254,10 +4253,10 @@ footer p {
 	color: #ddd;
 	margin-bottom: 20px;
 	margin-top:10px;
-	font-size: 13px;
+	font-size: 12px;
 }
 .footer-columns p {
-	font-size: 13px;
+	font-size: 12px;
 	line-height: 1.9;
 }
 .footer-columns p:last-child {
@@ -5482,8 +5481,8 @@ section {
 /*---- Home Event ----*/
 .event-speakers {text-align: center}
 .event-speakers h4 {
-	font-family: "lovelo", sans-serif;
-	font-size: 20px;
+	font-size: 24px;
+	font-weight: bold;
 	margin-top: 20px;
 	margin-bottom: 0;
 }
