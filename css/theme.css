@@ -3604,6 +3604,9 @@ ul {
 	-webkit-backface-visibility: hidden;
 
 }
+.testimonials h2 {
+	font-weight: bold;
+}
 .testimonials h4 {
 	font-weight: 300;
 	line-height: 34px;
