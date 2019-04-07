@@ -1603,7 +1603,6 @@ p {
 @media (min-width: 992px) {
 	h1.large {
 		font-size: 122px;
-		line-height: 80px;
 		font-weight: 100;
 	}
 	h1 {
@@ -3605,6 +3604,11 @@ ul {
 
 }
 .testimonials h2 {
+	font-size:55px;
+	font-weight: bold;
+}
+.testimonials h3 {
+	font-size:40px;
 	font-weight: bold;
 }
 .testimonials h4 {
