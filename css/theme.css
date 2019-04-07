@@ -1524,7 +1524,7 @@ nav.navbar.nav-grey {
 
 /*---------- TYPOGRAPHY ----------*/
 h1, h2, h3, h4, h5, h6 {
-	font-family: 'Raleway', sans-serif;
+	font-family: 'AppleGothic', sans-serif;
 	font-weight: 300;
 	line-height: 1.1;
 	color: #191a1c;
@@ -5475,8 +5475,9 @@ section {
 /*---- Home Event ----*/
 .event-speakers {text-align: center}
 .event-speakers h4 {
-	font-family: "lovelo", sans-serif;
-	font-size: 15px;
+	font-family: "AppleGothic", sans-serif;
+	font-weight: bold;
+	font-size: 22px;
 	margin-top: 20px;
 	margin-bottom: 0;
 }
