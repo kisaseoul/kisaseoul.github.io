@@ -1575,7 +1575,7 @@ h6 small {
 }
 p {
 	font-family: 'Open Sans', sans-serif;
-	font-size: 14px;
+	font-size: 20px;
 	line-height: 1.75;
 	font-weight: 300;
 	color: #888;
@@ -1602,7 +1602,7 @@ p {
 }
 @media (min-width: 992px) {
 	h1.large {
-		font-size: 72px;
+		font-size: 122px;
 		line-height: 80px;
 		font-weight: 100;
 	}
@@ -1712,7 +1712,7 @@ hr.separator {
 	margin: 22px auto 25px auto;
 	width: 72px;
 	border-style: solid;
-	border-top-width: 2px;
+	border-top-width: 4px;
 }
 hr.separator.left {margin: 28px auto 25px 0}
 hr.separator.right {margin: 28px 0 25px auto}
@@ -1754,7 +1754,7 @@ a strong,
 }
 .subheading {
 	font-family: "lovelo", sans-serif;
-	font-size: 12px;
+	font-size: 24px;
 	letter-spacing: 2px;
 	font-weight: 400;
 	margin: 0;

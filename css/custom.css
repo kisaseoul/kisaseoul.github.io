@@ -33,7 +33,9 @@
 .bg-app-6 {
 	background-image: url(../img/backgrounds/bg-app-6.jpg);
 }
-
+.bg-event {
+	background-image: url(../img/backgrounds/bg.jpg);
+}
 .bg-event-1 {
 	background-image: url(../img/backgrounds/bg-event-1.jpg);
 }
