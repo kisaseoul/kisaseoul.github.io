@@ -14,7 +14,9 @@
 .bg-shop-2 {
 	background-image: url(../img/backgrounds/bg-shop-2.jpg);
 }
-
+.bg-app {
+	background-image: url(../img/backgrounds/bg-app.jpg);
+}
 .bg-app-1 {
 	background-image: url(../img/backgrounds/bg-app-1.jpg);
 }
