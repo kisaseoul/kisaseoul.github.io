@@ -5614,3 +5614,8 @@ section {
 .color-map iframe {
 	filter: saturate( 100% );
 }
+/* ////////////////////////////////// */
+.hero-fullscreen,
+.hero-fullwidth {
+    overflow: hidden;
+}

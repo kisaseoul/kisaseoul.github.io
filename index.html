@@ -5,10 +5,10 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>KICA SEOUL</title>
-        <link href="https://kisaseoul.github.io/img/assets/favicon.png" rel="icon" type="image/png">
+        <link href="img/assets/favicon.png" rel="icon" type="image/png">
         <link href="css/plugins.css" rel="stylesheet" type="text/css">
         <link href="css/theme.css" rel="stylesheet" type="text/css">
-        <link href="css/ionicons.min.css" rel="stylesheet" type="text/css">
+
         <link href="css/et-line-icons.css" rel="stylesheet" type="text/css">
         <link href="css/themify-icons.css" rel="stylesheet" type="text/css">
         <link href="fonts/lovelo/stylesheet.css" rel="stylesheet" type="text/css">
@@ -16,15 +16,7 @@
         <link href="css/custom.css" rel="stylesheet" type="text/css">
         <link href="css/colors/blue.css" id="color-scheme" rel="stylesheet" type="text/css">
     </head>
-    <script>
-    $("nav").find("a").click(function(e) {
-    e.preventDefault();
-    var section = $(this).attr("href");
-    $("html, body").animate({
-        scrollTop: $(section).offset().top
-    });
-});
-</script>
+
     <body>
 
         <!-- Start Header -->
@@ -46,11 +38,10 @@
                 <div id="navbar" class="navbar-collapse collapse">
                     <div class="container">
                         <ul class="nav navbar-nav menu-right">
-                            <li class=""><a href="/index.html" >HOME</a></li>
+                            <li class=""><a href="#hero" >HOME</a></li>
                             <li class=""><a href="#request" >상담 문의</a></li>
                             <li class=""><a href="#team" >강사진</a></li>
                             <li class=""><a href="#contact-us" >CONTACT US</a></li>
-                            <li class=""><a>|</a></li>
                             <li class=""><a href="" >KR</a></li>
                             <li class=""><a href="" >EN</a></li>
                             <li class=""><a href="" >CN</a></li>
@@ -63,7 +54,7 @@
         <!-- End Header -->
 
         <!-- Page Hero -->
-        <section class="hero-fullscreen parallax bg-event">
+        <section id="hero" class="hero-fullscreen parallax bg-event">
             <div class="hero-container container">
                 <div class="hero-content text-center">
 
@@ -313,6 +304,14 @@
         <script src="js/jquery.min.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/scripts.js"></script>
-
+        <script>
+          $("nav").find("a").click(function(e) {
+            e.preventDefault();
+            var section = $(this).attr("href");
+            $("html, body").animate({
+                scrollTop: $(section).offset().top
+            });
+          });
+        </script>
     </body>
 </html>
