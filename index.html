@@ -86,44 +86,18 @@
           <div class="contact">
             <div id="message"></div>
             <!-- Contact Form will be functional only on your server. Upload to your server when testing. -->
-            <!-- <form name="contactform" id="contactform">
+            <form name="contactform" id="contactform">
                   <fieldset><input name="name" type="text" id="name" placeholder=" 이름"/></fieldset>
-                  <fieldset><input name="phonenumber" type="text" id="phonenumber" placeholder=" 전화번호"/></fieldset>
+                  <fieldset><input name="phonenumber" type="number" id="phonenumber" placeholder=" 전화번호"/></fieldset>
                   <input type="submit" class="submit btn btn-md btn-primary btn-round" id="submit" value="신청하기"style="font-size:16px;font-weight: bold;" />
-              </form> -->
-            <form id="test-form">
+              </form>
 
-              <div>
-                <label>Field 1</label>
-                <input type="text" name="form_field_1" placeholder="Field 1" />
-              </div>
-
-              <div>
-                <label>Field 2</label>
-                <input type="text" name="form_field_2" placeholder="Field 2" />
-              </div>
-
-              <div>
-                <label>Field 3</label>
-                <input type="text" name="form_field_3" placeholder="Field 3" />
-              </div>
-
-              <div>
-                <label>Field 4</label>
-                <input type="text" name="form_field_4" placeholder="Field 4" />
-              </div>
-
-              <div>
-                <button type="submit" id="submit-form">Submit</button>
-              </div>
-
-            </form>
 
             <script>
-              var $form = $('form#test-form'),
+              var $form = $('form#contactform'),
                 url = 'https://script.google.com/macros/s/AKfycbw6o3GDFratEcUeYWYXioG0d7Oa_eVK3UbDZ-AtrPYzrWJ8_I0F/exec'
 
-              $('#submit-form').on('click', function(e) {
+              $('#submit').on('click', function(e) {
                 e.preventDefault();
                 var jqxhr = $.ajax({
                   url: url,
