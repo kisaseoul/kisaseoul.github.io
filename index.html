@@ -88,9 +88,10 @@
             <!-- Contact Form will be functional only on your server. Upload to your server when testing. -->
             <form name="contactform" id="contactform">
                   <fieldset><input name="name" type="text" id="name" placeholder=" 이름"/></fieldset>
-                  <fieldset><input name="phonenumber" type="number" id="phonenumber" placeholder=" 전화번호"/></fieldset>
+                  <fieldset><input name="phonenumber" type="text" id="phonenumber" placeholder=" 전화번호"/></fieldset>
                   <input type="submit" class="submit btn btn-md btn-primary btn-round" id="submit" value="신청하기"style="font-size:16px;font-weight: bold;" />
               </form>
+
 
 
             <script>
@@ -105,7 +106,7 @@
                   dataType: "json",
                   data: $form.serializeArray()
                 }).success(
-                  console.log("success")
+                  alert("신청되었습니다.")
                 );
               })
             </script>

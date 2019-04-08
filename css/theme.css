@@ -1630,7 +1630,7 @@ p {
 }
 @media (max-width: 992px) {
 	h1 {
-		font-size: 56px;
+		font-size: 122px;
 		letter-spacing: -1px;
 	}
 	.lead {
@@ -1660,8 +1660,8 @@ p {
 		line-height: 1;
 	}
 	h1.large {
-		font-size: 36px;
-		line-height: 40px;
+		font-size: 80px;
+		/* line-height: 40px; */
 		font-weight: 100;
 	}
 }
@@ -1672,8 +1672,8 @@ p {
 		line-height: 40px;
 	}
 	h1.large {
-		font-size: 32px;
-		line-height: 40px;
+		font-size: 64px;
+		/* line-height: 40px; */
 		font-weight: 100;
 	}
 }
@@ -3175,7 +3175,7 @@ ul {
 }
 @media(min-width:1200px){.md-pr20pr{padding-right:20%}.md-pl20pr{padding-left:20%}.md-p10pr{padding:10%}}
 @media (max-width:992px) {
-	.mb0-xs { margin-bottom: 0!important }
+	.mb0-xs { margin-bottom: 20!important }
 	.pt0-xs { padding-top: 0!important }
 	.mt0-xs { margin-top: 0!important }
 }
