@@ -16,6 +16,7 @@
   <link href='https://fonts.googleapis.com/css?family=Raleway:100,200,300,400%7COpen+Sans:400,300' rel='stylesheet' type='text/css'>
   <link href="css/custom.css" rel="stylesheet" type="text/css">
   <link href="css/colors/blue.css" id="color-scheme" rel="stylesheet" type="text/css">
+    <script src="js/jquery.min.js"></script>
 </head>
 
 <body>
@@ -90,29 +91,54 @@
                   <fieldset><input name="phonenumber" type="text" id="phonenumber" placeholder=" 전화번호"/></fieldset>
                   <input type="submit" class="submit btn btn-md btn-primary btn-round" id="submit" value="신청하기"style="font-size:16px;font-weight: bold;" />
               </form> -->
-            <form name="submit-to-google-sheet">
-              <input name="email" type="email" placeholder="Email" required>
-              <button type="submit">Send</button>
+            <form id="test-form">
+
+              <div>
+                <label>Field 1</label>
+                <input type="text" name="form_field_1" placeholder="Field 1" />
+              </div>
+
+              <div>
+                <label>Field 2</label>
+                <input type="text" name="form_field_2" placeholder="Field 2" />
+              </div>
+
+              <div>
+                <label>Field 3</label>
+                <input type="text" name="form_field_3" placeholder="Field 3" />
+              </div>
+
+              <div>
+                <label>Field 4</label>
+                <input type="text" name="form_field_4" placeholder="Field 4" />
+              </div>
+
+              <div>
+                <button type="submit" id="submit-form">Submit</button>
+              </div>
+
             </form>
 
             <script>
-              const scriptURL = 'https://script.google.com/macros/s/AKfycbw6o3GDFratEcUeYWYXioG0d7Oa_eVK3UbDZ-AtrPYzrWJ8_I0F/exec'
-              const form = document.forms['submit-to-google-sheet']
+              var $form = $('form#test-form'),
+                url = 'https://script.google.com/macros/s/AKfycbw6o3GDFratEcUeYWYXioG0d7Oa_eVK3UbDZ-AtrPYzrWJ8_I0F/exec'
 
-              form.addEventListener('submit', e => {
-                e.preventDefault()
-                fetch(scriptURL, {
-                    method: 'POST',
-                    body: new FormData(form)
-                  })
-                  .then(response => console.log('Success!', response))
-                  .catch(error => console.error('Error!', error.message))
+              $('#submit-form').on('click', function(e) {
+                e.preventDefault();
+                var jqxhr = $.ajax({
+                  url: url,
+                  method: "GET",
+                  dataType: "json",
+                  data: $form.serializeArray()
+                }).success(
+                  console.log("success")
+                );
               })
             </script>
-            </div>
-            <div class="icon-tabs-centered">
-              <ul id="iconTabs" class="nav nav-tabs nav-tabs-center">
-                <li class="active"><a href="#tab-i1" data-toggle="tab"><span>02-2138-0851<br>info@kicaseoul.org</span></a></li>
+          </div>
+          <div class="icon-tabs-centered">
+            <ul id="iconTabs" class="nav nav-tabs nav-tabs-center">
+              <li class="active"><a href="#tab-i1" data-toggle="tab"><span>02-2138-0851<br>info@kicaseoul.org</span></a></li>
             </ul>
             <div id="myTabContent" class="tab-content">
               <div class="tab-pane fade active in" id="tab-i1" style="font-size:16px;!important">
@@ -752,7 +778,7 @@
   <!-- End Back To Top -->
 
   <!-- Scripts -->
-  <script src="js/jquery.min.js"></script>
+
   <script src="js/plugins.js"></script>
   <script src="js/scripts.js"></script>
   <script>
@@ -764,9 +790,6 @@
       });
     });
   </script>
-  <script src="https://wzrd.in/standalone/formdata-polyfill"></script>
-<script src="https://wzrd.in/standalone/promise-polyfill@latest"></script>
-<script src="https://wzrd.in/standalone/whatwg-fetch@latest"></script>
 </body>
 
 </html>
