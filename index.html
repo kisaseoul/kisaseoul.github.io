@@ -82,12 +82,37 @@
         <div class="col-md-8 mr-auto text-center">
           <h2>상담 문의</h2>
           <hr class="separator">
-          <div class="icon-tabs-centered">
-            <!-- <div class="col-sm-12 mr-auto text-center">
-              <a href="#" class="btn btn-primary btn-lg btn-appear mt20 mb20" style="font-size:16px;font-weight: bold;"><span>신청하기<i class="ion-android-arrow-forward"></i></span></a>
-            </div> -->
-            <ul id="iconTabs" class="nav nav-tabs nav-tabs-center">
-              <li class="active"><a href="#tab-i1" data-toggle="tab"><span>02-2138-0851<br>info@kicaseoul.org</span></a></li>
+          <div class="contact">
+            <div id="message"></div>
+            <!-- Contact Form will be functional only on your server. Upload to your server when testing. -->
+            <!-- <form name="contactform" id="contactform">
+                  <fieldset><input name="name" type="text" id="name" placeholder=" 이름"/></fieldset>
+                  <fieldset><input name="phonenumber" type="text" id="phonenumber" placeholder=" 전화번호"/></fieldset>
+                  <input type="submit" class="submit btn btn-md btn-primary btn-round" id="submit" value="신청하기"style="font-size:16px;font-weight: bold;" />
+              </form> -->
+            <form name="submit-to-google-sheet">
+              <input name="email" type="email" placeholder="Email" required>
+              <button type="submit">Send</button>
+            </form>
+
+            <script>
+              const scriptURL = 'https://script.google.com/macros/s/AKfycbw6o3GDFratEcUeYWYXioG0d7Oa_eVK3UbDZ-AtrPYzrWJ8_I0F/exec'
+              const form = document.forms['submit-to-google-sheet']
+
+              form.addEventListener('submit', e => {
+                e.preventDefault()
+                fetch(scriptURL, {
+                    method: 'POST',
+                    body: new FormData(form)
+                  })
+                  .then(response => console.log('Success!', response))
+                  .catch(error => console.error('Error!', error.message))
+              })
+            </script>
+            </div>
+            <div class="icon-tabs-centered">
+              <ul id="iconTabs" class="nav nav-tabs nav-tabs-center">
+                <li class="active"><a href="#tab-i1" data-toggle="tab"><span>02-2138-0851<br>info@kicaseoul.org</span></a></li>
             </ul>
             <div id="myTabContent" class="tab-content">
               <div class="tab-pane fade active in" id="tab-i1" style="font-size:16px;!important">
@@ -739,6 +764,9 @@
       });
     });
   </script>
+  <script src="https://wzrd.in/standalone/formdata-polyfill"></script>
+<script src="https://wzrd.in/standalone/promise-polyfill@latest"></script>
+<script src="https://wzrd.in/standalone/whatwg-fetch@latest"></script>
 </body>
 
 </html>
