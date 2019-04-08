@@ -352,7 +352,7 @@ a.highlight:hover {
 }
 /* Parallax Backgrounds */
 .parallax {
-	background-size: cover;
+	/* background-size: cover; */
 	position: relative;
 	background-position: 50% 50%;
 	/*
