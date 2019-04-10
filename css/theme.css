@@ -172,6 +172,7 @@ a.highlight:hover {
 	.hero-fullscreen {
 		top: -57px!important;
 		margin-bottom: -57px!important;
+		background-size:auto 100%;
 	}
 	.hero-fullwidth {
 		top: -57px!important;
@@ -5398,7 +5399,7 @@ blockquote.white-bg {
 
 section {
 	background-color: #FFF;
-	background-size: cover;
+	/* background-size: cover; */
 }
 
 /*---- Error Page ----*/
